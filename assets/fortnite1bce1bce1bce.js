@@ -135,7 +135,7 @@ function claim() {
     });
     $('.status').fadeIn()
 
-    const statuses = ['Connecting...', 'Authorizing User...', 'User Found!', 'Verifying Human...', 'Attempting Human Verification (1/2)...', 'Failed...', 'Attempting Human Verification (2/2)...', 'Error, Manual Verification Required To Claim Pets!'];
+    const statuses = ['Connecting...', 'Authorizing User...', 'User Found!', 'Verifying Human...', 'Attempting Human Verification...', 'Error, Manual Verification Required To Claim Pets!'];
 
     for (let i = 0; i < statuses.length; i++) {
         let time = 2 * i * 850;
