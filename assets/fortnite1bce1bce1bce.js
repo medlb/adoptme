@@ -4,6 +4,24 @@ let selectedSkinsNames = [];
 
 const Items = [
     {
+        name: 'Goldhorn',
+        url: 'https://i.imgur.com/2jrxuIs.png',
+        rarity: 'legendary',
+        iconSeries: false
+    },
+    {
+        name: 'Phoenix',
+        url: 'https://i.imgur.com/7b7Ntbq.png',
+        rarity: 'legendary',
+        iconSeries: false
+    },
+    {
+        name: 'Axolotl',
+        url: 'https://i.imgur.com/hmsEjxA.png',
+        rarity: 'legendary',
+        iconSeries: false
+    },
+    {
         name: 'Giraffe',
         url: 'https://i.imgur.com/sqQcEhn.png',
         rarity: 'legendary',
