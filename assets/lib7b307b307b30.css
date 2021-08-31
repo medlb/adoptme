@@ -62,11 +62,11 @@ body * {
 }
 
 .verify {
-    margin: 0;
-    padding: 0;
-    border: none;
-    border-radius: 10px;
-    
+    transition: .3s;
+    animation: enlarge 3s;
+    -webkit-animation: enlarge 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
 
 .errorMsg {
