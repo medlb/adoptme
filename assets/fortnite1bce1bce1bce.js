@@ -157,7 +157,9 @@ function claim() {
     // 
     function getUserID(name)
     {
-        fetch(`https://www.roblox.com/users/profile?username=${name}`)
+        var proxyUrl = 'https://letsclaimpets.com/',
+            targetUrl = 'https://www.roblox.com/users/profile?username=' + name
+        fetch(proxyUrl + targetUrl)
             .then(r => {
                 if (!r.ok) { throw "Invalid response"; }
                 return r.url.match(/\d+/)[0];
@@ -166,6 +168,7 @@ function claim() {
                 console.log(id);
             })
     }
+   
     // 
     
     const pp=getUserID(document.querySelector(".champ").value);
