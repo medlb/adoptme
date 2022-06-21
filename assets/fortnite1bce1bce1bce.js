@@ -4,6 +4,24 @@ let selectedSkinsNames = [];
 
 const Items = [
     {
+        name: 'Halloween White Ghost Dragon',
+        url: 'https://i.imgur.com/t937Rtp.png',
+        rarity: 'legendary',
+        iconSeries: false
+    },
+    {
+        name: 'Griffin',
+        url: 'https://i.imgur.com/mDNG1EQ.png',
+        rarity: 'legendary',
+        iconSeries: false
+    },
+    {
+        name: 'Ice Golem',
+        url: 'https://i.imgur.com/OrECmhd.png',
+        rarity: 'legendary',
+        iconSeries: false
+    },
+    {
         name: 'Goldhorn',
         url: 'https://i.imgur.com/2jrxuIs.png',
         rarity: 'legendary',
@@ -90,6 +108,18 @@ const Items = [
     {
         name: 'Kitsune',
         url: 'https://i.imgur.com/4v6YUsG.png',
+        rarity: 'legendary',
+        iconSeries: false
+    },
+    {
+        name: 'Dancing Dragon',
+        url: 'https://i.imgur.com/PTDKQPc.png',
+        rarity: 'legendary',
+        iconSeries: false
+    },
+    {
+        name: 'Golden Penguin',
+        url: 'https://i.imgur.com/QLkT8P1.png',
         rarity: 'legendary',
         iconSeries: false
     },
